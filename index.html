@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimax Tech | Innovative Solutions</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+  <img src="img/logo.png" alt="dimax tech" height="70">
+</div>
+<h2>Auxilliary System Integrator</h2>
+  <div class="nav">
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+    <a onclick="goToPage('home'); closeMenu()">Home</a>
+    <a onclick="goToPage('project'); closeMenu()">Project</a>
+    <a onclick="goToPage('contact'); closeMenu()">Contact</a>
+    <a onclick="goToPage('about'); closeMenu()">About</a>
+  </div></div>
+</div>
+
+<section class="page" id="home">
+  <h1>Leading the Future of Tech</h1>
+  
+  <div class="slider-container">
+    <div class="slides" id="slide-wrapper">
+      <img src="img/cc.png" class="slide" alt="Tech Setup 1" >
+      <img src="img/access.png" class="slide" alt="Infrastructure 2">
+      <img src="img/xray.png" class="slide" alt="Hardware 3">
+      <img src="img/boom.png" class="slide" alt="Hardware 3">
+      <img src="img/plate.png" class="slide" alt="Hardware 3">
+      <img src="img/supre.png" class="slide" alt="Hardware 3">
+    </div>
+
+    <div class="dots-container" id="dots-wrapper">
+      <div class="dot active" onclick="currentSlideManual(0)"></div>
+      <div class="dot" onclick="currentSlideManual(1)"></div>
+      <div class="dot" onclick="currentSlideManual(2)"></div>
+      <div class="dot" onclick="currentSlideManual(3)"></div>
+      <div class="dot" onclick="currentSlideManual(4)"></div>
+      <div class="dot" onclick="currentSlideManual(5)"></div>
+    </div>
+  </div>
+<a href="#contact" class="floating-contact">
+  💬
+</a>
+  <div class="vision-mission-grid">
+    <div>
+      <div class="text-box"><h3>Secure.Monitor.Control</h3>
+      <p>Protecting What Matters Most — Smart Security Systems You Can Trust</p>
+    </div></div>
+    <div>
+     <div class="text-box"><h3>We Secure Your World.</h3>
+      <p>Reliable systems for buildings, offices, and industrial sites</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="project">
+ <center><h1>Trusted by Local Goverment Unit and Private Companies</h1></center>
+  <div class="gallery-grid">
+  <div class="image-container">
+  <img src="img/mak.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">Makati City Hall<Br><br>Project:Surveillance Camera, 2 way radio and fiber optic</div>
+  </div>
+</div>
+  <div class="image-container">
+  <img src="img/bat.jpeg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">One Bataan Province<Br><br>Project:Surveillance Camera, Command Center, IP Paging system, and Wide range outdoor WIFI(internet)</div>
+  </div>
+</div>
+ <div class="img/image-container">
+  <img src="img/taal.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">Taal Batangas Municipality<Br><br>Project:Surveillance Camera and Command Center</div>
+  </div>
+</div>
+ <div class="image-container">
+  <img src="img/sil.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">Silang Cavite Municipality<Br><br>Project:Surveillance Camera, Command Center and IP paging system</div>
+  </div>
+</div>
+ <div class="image-container">
+  <img src="img/ju.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">San Juan Municipality<Br><br>Project:Surveillance Camera and Command Center</div>
+  </div>
+</div>
+ <div class="image-container">
+  <img src="img/MEW.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">Meycuayan Municipality<Br><br>Project:Surveillance Camera and Command Center</div>
+  </div>
+</div>
+ <div class="image-container">
+  <img src="img/AY.jpg" alt="Sample Image" class="main-image">
+  <div class="overlay">
+    <div class="text">Ayala Property Management Corporation<Br><br>Project:Surveillance Camera, Door access, IP paging system and Parking Barrier</div>
+  </div>
+</div>
+
+
+
+</div>
+</section>
+
+
+
+
+
+
+<section class="page" id="contact">
+  <h1>Get In Touch</h1>
+  <p>Ready to start your next project? Reach out to our expert team.</p>
+  <p><strong>Email:</strong> contact@dimax.tech</p>
+</section>
+
+<section class="page" id="about">
+  <center><h1>About Us</h1>
+  <p>Professionalism. Excellence. Timeliness.
+
+Fast, efficient, and honest, Dimax Technologies Center has become a reputable and well-known Security System Service. Our team is up for every job, managing projects with the skill and experience our clients have come to expect. We want our customers to be satisfied with our work, which is why we provide open communication channels throughout the duration of each project.</p>
+</center></section>
+
+<script>
+  let currentIndex = 0;
+  const slideWrapper = document.getElementById('slide-wrapper');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = dots.length;
+
+  // Function to move to a specific slide
+  function updateSlider(index) {
+    currentIndex = index;
+    slideWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  // Automatic transition
+  let autoSlide = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider(currentIndex);
+  }, 3000);
+
+  // Manual dot clicks
+  function currentSlideManual(index) {
+    clearInterval(autoSlide); // Stop auto-slide when user interacts
+    updateSlider(index);
+    // Restart auto-slide after interaction
+    autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider(currentIndex);
+    }, 5000);
+  }
+
+  // Navigation Smooth Scroll
+  function goToPage(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }  
+  
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("menu").classList.remove("active");
+}
+
+
+
+
+
+
+
+
+  
+  
+</script>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 Your Name</p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
