@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimax Tech | Innovative Solutions</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+      <img src="img/logo.webp" alt="dimax tech" height="70">
+    </div>
+       
+  <div class="nav">
+     <div class="burger" onclick="toggleMenu()">☰</div>
+       <div class="menu" id="menu">
+      <a onclick="goToPage('home'); closeMenu()">Home</a>
+     <a onclick="goToPage('project'); closeMenu()">Project</a>
+     <a onclick="goToPage('contact'); closeMenu()">Contact</a>
+     <a onclick="goToPage('about'); closeMenu()">About</a>
+       </div>
+  </div>
+</div>
+
+<section class="page" id="home">
+
+<h1>Leading the Future of Tech</h1>
+
+<div class="slider-container">
+  <div class="slides" id="slide-wrapper">
+      <img src="img/cc.webp" class="slide" alt="Tech Setup 1" >
+      <img src="img/access.webp" class="slide" alt="Infrastructure 2">
+      <img src="img/xray.webp" class="slide" alt="Hardware 3">
+      <img src="img/boom.webp" class="slide" alt="Hardware 3">
+      <img src="img/plate.webp" class="slide" alt="Hardware 3">
+      <img src="img/supre.webp" class="slide" alt="Hardware 3">
+  </div>
+
+  <div class="dots-container" id="dots-wrapper">
+      <div class="dot active" onclick="currentSlideManual(0)"></div>
+      <div class="dot" onclick="currentSlideManual(1)"></div>
+      <div class="dot" onclick="currentSlideManual(2)"></div>
+      <div class="dot" onclick="currentSlideManual(3)"></div>
+      <div class="dot" onclick="currentSlideManual(4)"></div>
+      <div class="dot" onclick="currentSlideManual(5)"></div>
+  </div>
+
+<button class="prev"><i class="fas fa-chevron-left" onclick="changeSlide(-1)""></i></button>
+<button class="next"><i class="fas fa-chevron-right" onclick="changeSlide(1)"></i></button>
+</div>
+
+<a href="#contact" class="floating-contact">💬</a>
+
+<div class="vision-mission-grid">
+
+  <div class="text-box"><h3>Secure.Monitor.Control</h3>
+      <p>Protecting What Matters Most — Smart Security Systems You Can Trust</p>
+  </div>
+
+  <div class="text-box"><h3>We Secure Your World.</h3>
+       <p>Reliable systems for buildings, offices, and industrial sites</p>
+  </div>
+  
+  <div class="text-box"><h3>Secure.Monitor.Control</h3>
+      <p>Protecting What Matters Most — Smart Security Systems You Can Trust</p>
+  </div>
+
+  <a href="index.html" >
+    <center><div class="text-box"><h3><br>"Learn More Product"<Br><br><br></h3>
+      </center></a>
+  
+
+</div>
+
+
+</section>
+
+<section class="pages" id="project">
+
+        <h1>Trusted by Local Goverment Unit and Private Companies</h1>
+<br>
+<div class="gallery-grid">
+  <div class="image-container">
+    <img src="img/mak.webp" alt="Sample Image" class="main-image">
+     <div class="overlay">
+        <div class="text">Makati City Hall<Br><br>Project:Surveillance Camera, 2 way radio and fiber optic
+        </div>
+     </div>
+  </div>
+
+  <div class="image-container">
+    <img src="img/bat.webp" alt="Sample Image" class="main-image">
+      <div class="overlay">
+        <div class="text">One Bataan Province<Br><br>Project:Surveillance Camera, Command Center, IP Paging system, and Wide range outdoor WIFI(internet)
+        </div>
+     </div>
+  </div>  
+
+ <div class="image-container">
+    <img src="img/taal.webp" alt="Sample Image" class="main-image">
+      <div class="overlay">
+       <div class="text">Taal Batangas Municipality<Br><br>Project:Surveillance Camera and Command Center
+       </div>
+      </div>
+  </div>
+ <div class="image-container">
+    <img src="img/sil.webp" alt="Sample Image" class="main-image">
+      <div class="overlay">
+        <div class="text">Silang Cavite Municipality<Br><br>Project:Surveillance Camera, Command Center and IP paging system
+        </div>
+       </div>
+  </div>
+
+ <div class="image-container">
+    <img src="img/ju.webp" alt="Sample Image" class="main-image">
+   <div class="overlay">
+      <div class="text">San Juan Municipality<Br><br>Project:Surveillance Camera and Command Center
+      </div>
+    </div>
+  </div>
+
+ <div class="image-container">
+    <img src="img/MEW.webp" alt="Sample Image" class="main-image">
+    <div class="overlay">
+      <div class="text">Meycuayan Municipality<Br><br>Project:Surveillance Camera and Command Center
+      </div>
+    </div>
+  </div>
+
+ <div class="image-container">
+    <img src="img/AY.webp" alt="Sample Image" class="main-image">
+    <div class="overlay">
+      <div class="text">Ayala Property Management Corporation<Br><br>Project:Surveillance Camera, Door access, IP paging system and Parking Barrier
+      </div>
+     </div>
+  </div>
+
+   <div class="image-container">
+    <a href="index.html">
+    <img src="img/vmw.gif" alt="Sample Image" class="main-image"></a>
+    
+      
+  
+ 
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+<section class="page" id="contact">
+  <div class="contact-container">
+
+    <h3>Contact Us</h3>
+    <p>Reach out to us for inquiries, installation, or support.</p>
+
+    <div class="contact-grid">
+<a href="tel:+639358707424">
+      <div class="contact-box">
+        <h3>📱 Phone / Viber</h3>
+        </a><p>+63 900 000 0000</p>
+      </div></a>
+<a href="mailto:rdltinio27@gmail.com">
+      <div class="contact-box">
+        <h3>📧 Email</h3>
+        <p>yourname@gmail.com</p>
+      </div></a>
+<a href="https://www.facebook.com/spongerock" target="_blank">
+      <div class="contact-box">
+        <h3>📘 Facebook</h3>
+        <p>facebook.com/yourpage</p>
+      </div></a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="page" id="about">
+
+  <center><h1>About Us</h1>
+  <p>Professionalism. Excellence. Timeliness. Fast, efficient, and honest, Dimax Technologies Center has become a reputable and well-known Security System Service. Our team is up for every job, managing projects with the skill and experience our clients have come to expect. We want our customers to be satisfied with our work, which is why we provide open communication channels throughout the duration of each project.</p>
+  </center>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section center">
+      <h3>Dimax Technologies Center</h3>
+      <p>Protecting What Matters Most — Smart Security Systems You Can Trust.</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Dimax Technologies Center. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  let currentIndex = 0;
+  const slideWrapper = document.getElementById('slide-wrapper');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = dots.length;
+
+  // Function to move to a specific slide
+  function updateSlider(index) {
+    currentIndex = index;
+    slideWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    // Update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  // Automatic transition
+  let autoSlide = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider(currentIndex);
+  }, 5000);
+
+  // Manual dot clicks
+  function currentSlideManual(index) {
+    clearInterval(autoSlide); // Stop auto-slide when user interacts
+    updateSlider(index);
+    // Restart auto-slide after interaction
+    autoSlide = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider(currentIndex);
+    }, 5000);
+  }
+
+  // Navigation Smooth Scroll
+  function goToPage(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }  
+  
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("menu").classList.remove("active");
+}
+
+
+function changeSlide(step) {
+  clearInterval(autoSlide); // stop auto when user clicks
+
+  currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+  updateSlider(currentIndex);
+
+  // restart auto-slide
+  autoSlide = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider(currentIndex);
+  }, 5000);
+}
+
+
+</script>
+
+</body>
+</html>
